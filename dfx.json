@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "hezron_backend": {
+      "main": "src/hezron_backend/main.mo",
+      "type": "motoko"
+    },
+    "hezron_frontend": {
+      "dependencies": [
+        "hezron_backend"
+      ],
+      "source": [
+        "src/hezron_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "hezron_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
